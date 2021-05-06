@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+
+body {
+    margin: 0;
+    background-color: hsl(233, 47%, 7%);
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 5em;
+}
+
+.container {
+    margin: 4em 1em 2em ;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: .5em;
+    text-align: center;
+}
+
+.image {
+    background-color:hsl(277, 64%, 61%);
+    border-radius: .5em .5em 0 0;
+}
+
+.heading-img {
+    width: 100%;
+    height: 100%;
+    border-radius: .5em .5em 0 0;
+    opacity: .5;
+    display: block;
+}
+
+.left-col {
+    margin: 2.5em 1em auto;
+
+    h1 {
+        width: 80%;
+        margin: auto;
+        color: hsl(0, 0%, 100%);
+        font-size: 1.7em;
+    }
+
+    .text-color {
+        color: hsl(277, 64%, 61%);
+    }
+
+    .main-paragraph {
+        width: 65%;
+        line-height: 2;
+        margin: 1em auto 2.5em;
+        font-size: .8em;
+    }
+}
+
+.info {
+    margin: auto;
+    width: 30%;
+    padding-bottom: 1.3em;
+    line-height: 1.7;
+
+    .stats {
+        font-size: .6em;
+        text-transform: uppercase;
+        letter-spacing: 1.5px ;
+        margin: 2em auto;
+    }
+
+    .figures {
+        font-weight: bold;
+        color: hsl(0, 0%, 100%);
+        font-size: 2em;
+        letter-spacing: normal;
+    }
+}
+
+.attribution {
+    font-size: .6em;
+    color: grey;
+    text-align: center;
+
+    p, a {
+        color: grey;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 5em 9em 0;
+    }
+
+    .heading-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0 .5em .5em 0;
+        opacity: .5;
+    }
+
+    .image {
+        width: 145%;
+        background-color:hsl(277, 64%, 61%);
+        border-radius: 0 .5em .5em 0;
+    }
+
+
+    .left-col {
+        text-align: left;
+        margin-left: 4em;
+        margin-top: 4em;
+
+        h1, p {
+            font-size: 2em;
+        }
+        
+    }
+
+    .main-heading, .main-paragraph, .info {
+        display: inline-block;
+        padding-bottom: .5em;
+    }
+
+
+    .main-paragraph {
+        width: 50%;
+    }
+
+    .info {
+        padding-bottom: 0;
+        display: flex;
+        width: 80%;
+        margin-left: 0;
+
+        .stats {
+            margin: 2em 55px auto 0;
+        }
+        
+    }
+
+}
